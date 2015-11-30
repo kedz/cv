@@ -55,6 +55,8 @@
 
 \NewEntry{}{\textit{Made in California,}}{January, 29$^{th}$ 1986} % Birthplace and date
 
+\NewEntry{web}{\href{http://www.cs.columbia.edu/~kedzie}{www.cs.columbia.edu/$\sim$kedzie}} % Email address
+
 \NewEntry{email}{\href{mailto:kedzie@cs.columbia.edu}{kedzie@cs.columbia.edu}} % Email address
 
 \NewEntry{github}{\href{https://github.com/kedz}{https://github.com/kedz}} % Personal website
@@ -64,9 +66,205 @@
 
 \vspace{1em} % Extra white space between the personal information section and goal
 
-\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+\noindent\spacedlowsmallcaps{About}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{Gain insight into general and robust techniques for text understanding and their application to automatic summarization.}\vspace{2em} % Goal text
+\Description{I am currently a second year Ph.D. student in the Department of 
+ Computer Science at Columbia University, working in the field of Natural 
+ Language Processing under Prof. \textsc{Kathleen McKeown}. My research has 
+ focused  
+ on predictive models for large scale and streaming news summarization. 
+ I am currently interested in how linguistic constraints, like discourse
+ coherence, can be used with learned models to generate more natural, 
+ informative, and reliable summaries.}\vspace{2em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\spacedlowsmallcaps{Publications}\vspace{1em}
+
+%\NewEntry{}{Chris Kedzie, Kathleen McKeown, and Fernando Diaz. Columbia University at TREC 2014. In
+%\textit{Online Proceedings of the Fourteenth Text REtrieval Conference (TREC2014)
+%, 2014}}
+
+%\NewEntry{Feb. 2015}{Columbia U. at TREC: Temporal Summarization}
+
+%\Description{\MarginText{Temporal Summarization Track, TREC 2014}Abstract: In
+
+%\newline
+%Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
+%}
+
+%\NewEntry{Feb. 2014}{Aug. 2014}
+
+%\Description{\MarginText{Proceedings of the Bloomberg Workshop on Social Good, KDD, August 2014.}Abstract: We have developed a text summarization system that
+%can generate summaries over time from web crawls on disasters. We show that
+%our method of identifying exemplar sentences for a summary using affinity
+%propagation clustering produces better summaries than clustering based on
+%K-medoids as measured using Rouge on a small set of examples. A key component
+%of our approach is the prediction of salient information using event related
+%features based on location, temporal changes in topic, and two different
+%language models.\newline
+%Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
+%}
+
+
+
+\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\NewEntry{July 2015}{Chris Kedzie, Kathleen McKeown, and Fernando Diaz. \textit{Predicting Salient Updates for Disaster Summarization}}
+
+\Description{\MarginText{Proceedings of the 53nd Annual Meeting of the Association for Computational Linguistics} Abstract:
+During crises such as natural disasters or other human tragedies, 
+information needs of both civilians and responders often require urgent, 
+specialized treatment. Monitoring and summarizing a text stream during such 
+an event remains a difficult problem. We present a system for update 
+summarization which predicts the salience of sentences with respect to an 
+event and then uses these predictions to directly bias a clustering algorithm 
+for sentence selection, increasing the quality of the updates. We use novel, 
+disaster-specific features for salience prediction, including 
+geo-locations and language models representing the language of disaster. 
+Our evaluation on a standard set of retrospective events using ROUGE shows 
+that salience prediction provides a significant improvement over other 
+approaches.}
+
+
+\spacedlowsmallcaps{Talks}\vspace{1em}
+
+\NewEntry{Nov. 2015}{Learning 2 Summarize: TREC 2015}
+
+\Description{\MarginText{Temporal Summarization Track, TREC 2015}Abstract: In
+this talk, I present an overview of our participation in the temporal 
+summarization track at the 2015 Text Retrieval Conference. 
+%Using a machine
+%learning based approach to the temporal summarization task is difficult 
+%because 
+Most of the available training data for this task consists of static judgements
+on returned updates, making it difficult to make use of sequential predictions
+in a learned model. I show how we used learning based search
+ (SEARN, Learning2Search, LOLS) to sample 
+realistic runs over the training streams and learn from dynamic features
+like previous update decisions and rolling stream observations.  Our 
+resulting system is able to build an event summary in an online fashion
+avoiding latency penalties while still outperforming retrospective 
+approaches (e.g. clustering). 
+\newline
+Joint work with \textsc{Fernando Diaz}.
+}
+
+
+
+
+\NewEntry{July 2015}{Predicting Salient Updates for Disaster Summarization}
+
+\Description{\MarginText{Association of Computational Linguistics} I presented our long-paper
+submission at the 2015 meeting of the Association for Computational Linguistics
+in Beijing, China. See associated paper 
+abstract.}
+
+
+
+
+
+\NewEntry{Nov. 2014}{Columbia U. at TREC: Temporal Summarization}
+
+\Description{\MarginText{Temporal Summarization Track, TREC 2014}Abstract: In
+this talk, I present an overview of our participation in the temporal 
+summarization track at the 2014 Text Retrieval Conference. Our 
+submission was one of the top overall submissions for this track.
+Our performance gain came largely from our precision in the 
+summary update selection stage; I outline the details of our salience
+regression model and affinity propagation clustering architecture, including
+their effect on our scores. I also address our current system shortcomings,
+especially our inability to explicitly control for redundancy.
+\newline
+Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
+}
+
+
+\NewEntry{Aug. 2014}{Summarizing Disasters Over Time}
+
+\Description{\MarginText{Bloomberg Data Frameworks Track, KDD 2014}Abstract: We have developed a text summarization system that
+can generate summaries over time from web crawls on disasters. We show that
+our method of identifying exemplar sentences for a summary using affinity
+propagation clustering produces better summaries than clustering based on
+K-medoids as measured using Rouge on a small set of examples. A key component
+of our approach is the prediction of salient information using event related
+features based on location, temporal changes in topic, and two different
+language models.\newline
+Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
+}
+
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+\NewEntry{Summer 2015}{Research Intern, \textsc{Microsoft Research}}
+
+\Description{\MarginText{MSR-NYC} I interned with Fernando Diaz at Microsoft
+    Research in New York City, continuing our collaboration on streaming 
+    news summarization. I developed scalable summarization systems 
+    to provide users with brief updates of news events as they unfold. 
+    Our work was submitted to the Temporal Summarization Track of the 2015
+    Text Retrieval Conference, where we were a top performer and invited
+to give a talk.}
+
+
+\NewEntry{Spring 2014}{Teacher's Assistant, \textsc{Columbia University}}
+
+\Description{\MarginText{Columbia University}I was the TA for the class 
+\textit{Semantic Technologies in IBM Watson}, taught by IBM researcher 
+\textsc{Alfio Gliozzo}. The class covered the various inner workings of the 
+Jeopardy
+playing computer. My responsibilities included teaching several lectures on
+foundational natural language processing tasks and problems, and an overview
+of the semantic web. Along with Dr. \textsc{Gliozzo}, I helped guide and 
+supervise the
+various student projects, one of which led to a publication at EMNLP 2014.}
+
+%------------------------------------------------
+
+\NewEntry{2008--2011}{Composer's Assistant, \textsc{Stimmung}  --- New York}
+
+\Description{\MarginText{Stimmung \href{http://www.stimmung.tv}{stimmung.tv}}Performed 
+audio engineering/mixing/editing and sheet music preparation for 
+staff composers in a busy commercial music and sound post-production studio.
+Posted and presented work to clients. Provided general office support and
+correspondence. Organized and archived audio and video assets. 
+Coordinated asset delivery to
+clients/post-production services. 
+Worked on many CLEO and Emmy award winning commercial
+campaigns including several Super Bowl spots for such clients as: Coca-Cola, 
+Mercedes-Benz, Kia, Levi's, and Monster.com.
+In addition to commercials, I also helped produce music for several
+independent films, documentaries, and television shows including 
+\textit{Reagan} (HBO), \textit{The Rising: Rebuilding Ground Zero} (Discovery Communications), and \textit{Journey to the Stars} (Hayden Planetarium, 
+American Museum of Natural History).  
+ }
+
+%------------------------------------------------
+
+\NewEntry{2006-2008}{Production Director, \textsc{KXLU} --- Los Angeles}
+
+\Description{\MarginText{KXLU 88.9FM \href{http://www.kxlu.com}{kxlu.com}}Worked with station directors and staff to plan 
+concerts and events in the Los Angeles area, as well as the annual fundraiser.
+Supervised implementation of a new website. Coordinated the recording and 
+broadcast of all live and pre-recorded performances and interviews
+at the station. Managed and researched equipment upgrades for the KXLU 
+Production Studio. }
+
+% \\ Reference: Big \textsc{Mike}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:mike@buymore.com}{mike@buymore.com}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -78,19 +276,31 @@
 
 \Description{\MarginText{Doctor of Philosophy}\textit{Natural Language Processing}\ \ $\cdotp$\ \ Dept. of Computer Science\ \ $\cdotp$\ \ \newline Fu Foundation School of Engineering \& Applied Science \newline
 Adviser: Prof.~\textsc{Kathleen McKeown}\\
-Description: With Prof. \textsc{McKeown}, I am working on event understanding from 
-newswire and social media text. Specifically, we are exploring techniques
-for automatically summarizing natural disasters, acts of terrorism, and 
-other large-scale, catastrophic events. I am currently working on the learning
-of sentence representations and similarity methods that take into account 
-event causality and correlation for use in text clustering.
-With Prof. \textsc{McKeown} and Dr. \textsc{Fernando Diaz} at Microsoft Research, I 
-participated in the Text Retrieval Conference Temporal Summarization track,
-where I experimented with regression methods for predicting important 
-information to be included in automatically generated summaries.
-I am also overseeing a masters student and two undergraduate students in an
-effort to modernize Prof. \textsc{McKeown's} automatic news summarization 
-system, Newsblaster. }
+Description: 
+I am a second year Ph.D. student, working with Prof. \textsc{McKeown} on event
+understanding from text data. My research has focused on 
+automatic news summarization, using trainable models in 
+a streaming news setting. For the past two years, I have participated in the 
+Temporal Summarization Track at the Text Retrieval Conference (TREC) and have
+been invited to present both times. I am generally interested in 
+regression, ranking, and optimization for content selection, especially when
+applied to automatic summary generation. With Prof. \textsc{McKeown} and 
+\textsc{Fernando Diaz} at Microsoft Research, I have applied these techniques 
+to the domain of man-made and natural disaster news.}
+
+%With Prof. \textsc{McKeown}, I am working on event understanding from 
+%newswire and social media text. Specifically, we are exploring techniques
+%for automatically summarizing natural disasters, acts of terrorism, and 
+%other large-scale, catastrophic events. I am currently working on the learning
+%of sentence representations and similarity methods that take into account 
+%event causality and correlation for use in text clustering.
+%With Prof. \textsc{McKeown} and Dr. \textsc{Fernando Diaz} at Microsoft Research, I 
+%participated in the Text Retrieval Conference Temporal Summarization track,
+%where I experimented with regression methods for predicting important 
+%information to be included in automatically generated summaries.
+%I am also overseeing a masters student and two undergraduate students in an
+%effort to modernize Prof. \textsc{McKeown's} automatic news summarization 
+%system, Newsblaster. }
 
 %------------------------------------------------
 
@@ -142,131 +352,6 @@ Frame Festival.'').}
 
 
 
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-%\spacedlowsmallcaps{Publications}\vspace{1em}
-
-%\NewEntry{}{Chris Kedzie, Kathleen McKeown, and Fernando Diaz. Columbia University at TREC 2014. In
-%\textit{Online Proceedings of the Fourteenth Text REtrieval Conference (TREC2014)
-%, 2014}}
-
-%\NewEntry{Feb. 2015}{Columbia U. at TREC: Temporal Summarization}
-
-%\Description{\MarginText{Temporal Summarization Track, TREC 2014}Abstract: In
-
-%\newline
-%Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
-%}
-
-%\NewEntry{Feb. 2014}{Aug. 2014}
-
-%\Description{\MarginText{Proceedings of the Bloomberg Workshop on Social Good, KDD, August 2014.}Abstract: We have developed a text summarization system that
-%can generate summaries over time from web crawls on disasters. We show that
-%our method of identifying exemplar sentences for a summary using affinity
-%propagation clustering produces better summaries than clustering based on
-%K-medoids as measured using Rouge on a small set of examples. A key component
-%of our approach is the prediction of salient information using event related
-%features based on location, temporal changes in topic, and two different
-%language models.\newline
-%Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
-%}
-
-
-
-\spacedlowsmallcaps{Talks}\vspace{1em}
-
-
-\NewEntry{Nov. 2014}{Columbia U. at TREC: Temporal Summarization}
-
-\Description{\MarginText{Temporal Summarization Track, TREC 2014}Abstract: In
-this talk, I present an overview of our participation in the temporal 
-summarization track at the 2014 Text REtrieval Conference. Our 
-submission was one of the top overall submissions for this track.
-Our performance gain came largely from our precision in the 
-summary update selection stage; I outline the details of our salience
-regression model and affinity propagation clustering architecture, including
-their effect on our scores. I also address our current system shortcomings,
-especially our inability to explicitly control for redundancy.
-\newline
-Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
-}
-
-
-\NewEntry{Aug. 2014}{Summarizing Disasters Over Time}
-
-\Description{\MarginText{Bloomberg Data Frameworks Track, KDD 2014}Abstract: We have developed a text summarization system that
-can generate summaries over time from web crawls on disasters. We show that
-our method of identifying exemplar sentences for a summary using affinity
-propagation clustering produces better summaries than clustering based on
-K-medoids as measured using Rouge on a small set of examples. A key component
-of our approach is the prediction of salient information using event related
-features based on location, temporal changes in topic, and two different
-language models.\newline
-Joint work with \textsc{Fernando Diaz} \& \textsc{Kathleen McKeown}.
-}
-
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
-
-\NewEntry{Spring 2014}{Teacher's Assistant, \textsc{Columbia University}}
-
-\Description{\MarginText{Columbia University}I was the TA for the class 
-\textit{Semantic Technologies in IBM Watson}, taught by IBM researcher 
-\textsc{Alfio Gliozzo}. The class covered the various inner workings of the 
-Jeopardy
-playing computer. My responsibilities included teaching several lectures on
-foundational natural language processing tasks and problems, and an overview
-of the semantic web. Along with Dr. \textsc{Gliozzo}, I helped guide and 
-supervise the
-various student projects, one of which led to a publication in EMNLP 2014.}
-
-%------------------------------------------------
-
-\NewEntry{2008--2011}{Composer's Assistant, \textsc{Stimmung}  --- New York}
-
-\Description{\MarginText{Stimmung \href{http://www.stimmung.tv}{stimmung.tv}}Performed 
-audio engineering/mixing/editing and sheet music preparation for 
-staff composers in a busy commercial music and sound post-production studio.
-Posted and presented work to clients. Provided general office support and
-correspondence. Organized and archived audio and video assets. 
-Coordinated asset delivery to
-clients/post-production services. 
-Worked on many CLEO and Emmy award winning commercial
-campaigns including several Super Bowl spots for such clients as: Coca-Cola, 
-Mercedes-Benz, Kia, Levi's, and Monster.com.
-In addition to commercials, I also helped produce music for several
-independent films, documentaries, and television shows including 
-\textit{Reagan} (HBO), \textit{The Rising: Rebuilding Ground Zero} (Discovery Communications), and \textit{Journey to the Stars} (Hayden Planetarium, 
-American Museum of Natural History).  
- }
-
-%------------------------------------------------
-
-\NewEntry{2006-2008}{Production Director, \textsc{KXLU} --- Los Angeles}
-
-\Description{\MarginText{KXLU 88.9FM \href{http://www.kxlu.com}{kxlu.com}}Worked with station directors and staff to plan 
-concerts and events in the Los Angeles area, as well as the annual fundraiser.
-Supervised implementation of a new website. Coordinated the recording and 
-broadcast of all live and pre-recorded performances and interviews
-at the station. Managed and researched equipment upgrades for the KXLU 
-Production Studio. }
-
-% \\ Reference: Big \textsc{Mike}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:mike@buymore.com}{mike@buymore.com}}
 
 %------------------------------------------------
 
