@@ -53,7 +53,7 @@
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
 
-\NewEntry{}{\textit{Made in California,}}{January, 29$^{th}$ 1986} % Birthplace and date
+\NewEntry{}{\textit{Made in California,}}{January 29$^{th}$, 1986} % Birthplace and date
 
 \NewEntry{web}{\href{http://www.cs.columbia.edu/~kedzie}{www.cs.columbia.edu/$\sim$kedzie}} % Email address
 
@@ -68,17 +68,15 @@
 
 \noindent\spacedlowsmallcaps{About}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{I am currently a third year Ph.D. student in the Department of 
+\Description{I am currently a $5^\textrm{th}$ year Ph.D. student in the Department of 
  Computer Science at Columbia University, working in the field of Natural 
  Language Processing under Prof. \textsc{Kathleen McKeown}. My research has 
  focused on applied machine learning for large scale, streaming news 
- summarization. I am currently working on text generation for multi-document 
- and streaming news summarization. In particular, I am interested in recent 
- advances in deep learning for text generation, and their application to text 
- summarization where there is an opportunity to jointly model the content 
- selection, planning, and realization phases that are typically designed as a 
- pipeline. 
+ summarization. I am currently working on deep learning methods for content
+ selection in text summarization problems. In general, I am interested  
+ in deep learning methods for text generation and text understanding.
  
+
  %To that end I am focusing on
  %learning hierarchical semantic representations of text that allow generation
  %to be composed at the phrase level.
@@ -130,6 +128,29 @@
 
 \spacedlowsmallcaps{Publications}\vspace{1em}
 
+\NewEntry{Nov. 2018}{Chris Kedzie, Kathleen McKeown, and Hal Daum\'e III. 
+    \textit{Content Selection in Deep Learning Models of Summarization}}
+
+\Description{\MarginText{Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing} Abstract: 
+We carry out experiments with deep learning
+models of summarization across the domains
+of news, personal stories, meetings, and medical
+articles in order to understand how content
+selection is performed. We find that many sophisticated
+features of state of the art extractive
+summarizers do not improve performance over
+simpler models. These results suggest that it
+is easier to create a summarizer for a new domain
+than previous work suggests and bring
+into question the benefit of deep learning models
+for summarization for those domains that
+do have massive datasets (i.e., news). At the
+same time, they suggest important questions
+for new research in summarization; namely,
+new forms of sentence representations or external
+knowledge sources are needed that are
+better suited to the summarization task.}
+
 
 
 \NewEntry{July 2016}{Chris Kedzie, Fernando Diaz, and Kathleen McKeown. 
@@ -144,7 +165,7 @@ We present a system based on sequential decision making for the online
  updates describing the event as it unfolds over time. Unlike previous work, 
  our approach is able to jointly model the relevance, comprehensiveness, 
  novelty, and timeliness required by time-sensitive queries.  We demonstrate 
- a 28.3\% improvement in summary $F_1$ and a 43.8\% improvement time-sensitive 
+ a 28.3\% improvement in summary $F_1$ and a 43.8\% improvement in time-sensitive 
  $F_1$ metrics. }
 
 
@@ -166,9 +187,19 @@ Our evaluation on a standard set of retrospective events using ROUGE shows
 that salience prediction provides a significant improvement over other 
 approaches.}
 
-\pagebreak 
+%\pagebreak 
 
 \spacedlowsmallcaps{Talks}\vspace{1em}
+
+
+\NewEntry{Nov. 2018}{Content Selection in Deep Learning Models of Summarization}
+
+\Description{\MarginText{Empirical Methods in Natural Language Processing}I 
+    presented our long-paper submission at the 2018 meeting of the 
+Conference on Empirical Methods in Natural Language Processing in Brussels.
+See associated paper abstract.}
+
+
 
 \NewEntry{Oct. 2016}{Machine Learning and Friends Lunch: Real-Time Web Scale Event Summarization Using
 Sequential Decision Making}
@@ -294,7 +325,7 @@ During crises such as natural disasters or other human tragedies, information   
 
 \noindent\spacedlowsmallcaps{Departmental Activities}\vspace{1em}
 
-\NewEntry{Sept. 2014 -- Present}{Organizer, Columbia NLP Talks}
+\NewEntry{Sept. 2014 -- Sept. 2017}{Organizer, Columbia NLP Talks}
 
 \Description{Coordinate and plan internal and visiting speakers to the NLP 
 group at Columbia.
@@ -318,6 +349,17 @@ NLP.
 %----------------------------------------------------------------------------------------
 
 \noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+
+\NewEntry{Summer 2017}{Research Intern, \textsc{Facebook} Applied Machine Learning (AML)}
+
+\Description{\MarginText{Facebook Research}I interned with Umut Ozertem in the AML group, focusing on click bait and hate speech detection.
+During my project, I developed an adversarial training method to improve 
+performance of our convolutional neural network text classifiers.
+I implemented this architecture in PyTorch and Caffe2, and integrated it into
+the internal FBLearner system for tracking and running experiments.
+My project is currently in use by several teams in the AML group, and is currently under submission for a patent.}
+
 
 \NewEntry{Summer 2015}{Research Intern, \textsc{Microsoft Research}}
 
@@ -387,19 +429,19 @@ Production Studio. }
 
 \NewEntry{2014-Present}{Columbia University}
 
-\Description{\MarginText{Doctor of Philosophy}\textit{Natural Language Processing}\ \ $\cdotp$\ \ Dept. of Computer Science\ \ $\cdotp$\ \ \newline Fu Foundation School of Engineering \& Applied Science \newline
-Adviser: Prof.~\textsc{Kathleen McKeown}\\
-Description: 
-I am a third year Ph.D. student, working with Prof. \textsc{McKeown} on event
-understanding from text data. My research has focused on 
-automatic news summarization, using trainable models in 
-a streaming news setting. For the past two years, I have participated in the 
-Temporal Summarization Track at the Text Retrieval Conference (TREC) and have
-been invited to present both times. I am generally interested in 
-regression, ranking, and optimization for content selection, especially when
-applied to automatic summary generation. With Prof. \textsc{McKeown} and 
-\textsc{Fernando Diaz} at Microsoft Research, I have applied these techniques 
-to the domain of man-made and natural disaster news.}
+\Description{\MarginText{PhD}\textit{Natural Language Processing}\ \ $\cdotp$\ \ Dept. of Computer Science\ \ $\cdotp$\ \ \newline Fu Foundation School of Engineering \& Applied Science \newline
+Adviser: Prof.~\textsc{Kathleen McKeown}\\ }
+%Description: 
+%I am a fifth year Ph.D. student, working with Prof. \textsc{McKeown} on event
+%understanding from text data. My research has focused on 
+%automatic news summarization, using trainable models in 
+%a streaming news setting. For the past two years, I have participated in the 
+%Temporal Summarization Track at the Text Retrieval Conference (TREC) and have
+%been invited to present both times. I am generally interested in 
+%regression, ranking, and optimization for content selection, especially when
+%applied to automatic summary generation. With Prof. \textsc{McKeown} and 
+%\textsc{Fernando Diaz} at Microsoft Research, I have applied these techniques 
+%to the domain of man-made and natural disaster news.}
 
 %With Prof. \textsc{McKeown}, I am working on event understanding from 
 %newswire and social media text. Specifically, we are exploring techniques
@@ -420,14 +462,14 @@ to the domain of man-made and natural disaster news.}
 \NewEntry{2013-2014}{Columbia University}
 
 \Description{\MarginText{Master of Science}GPA: 3.87\ \ $\cdotp$\ \ \textit{Natural Language Processing}\ \ $\cdotp$\ \ Dept. of Computer Science\ \ $\cdotp$\ \ \newline Fu Foundation School of Engineering \& Applied Science \newline
-Adviser: Prof.~\textsc{Kathleen McKeown}\\
-Description: 
-I continued to pursue my interests in natural language processing, 
-in addition to
-machine learning and statistics. In Prof. \textsc{McKeown's} lab I worked on
-question-answering (QA) for the DARPA BOLT (Broad Operational Language 
-Translation) project. My research focused on unsupervised methods of 
-text similarity and the application of semantic web/linked open data for QA.}
+Adviser: Prof.~\textsc{Kathleen McKeown}\\ }
+%Description: 
+%I continued to pursue my interests in natural language processing, 
+%in addition to
+%machine learning and statistics. In Prof. \textsc{McKeown's} lab I worked on
+%question-answering (QA) for the DARPA BOLT (Broad Operational Language 
+%Translation) project. My research focused on unsupervised methods of 
+%text similarity and the application of semantic web/linked open data for QA.}
 
 
 \NewEntry{2012-2013}{Columbia University}
@@ -449,19 +491,19 @@ Description: I took two classes on Java and Oracle SQL development.}
 
 \NewEntry{2004-2008}{Loyola Marymount University}
 
-\Description{\MarginText{Bachelor of Arts}GPA: 3.34\ \ $\cdotp$\ \ \textit{Music/Recording Arts Double Major}\ \ $\cdotp$\ \ College of Communication and Fine Arts/School of Film and Television\newline
-Description: In my undergraduate degree, I pursued interests in both classical
-music and sound design/mixing for film. Within the music department, I 
-concetrated on
-music theory/composition as well as guitar performance, culminating in two
-senior theses, an original composition, \textit{String Quartet for Space
-Travel}, and a guitar recital, featuring works by Antonio Lauro, Roland Dyens,
-Leo Brouwer, Miguel Llobet, Antonio Vivaldi, and others. Within the film
-department, I scored and sound designed/mixed many student films 
-(\textit{The Cannibal Ad}, Golden Hamster(Best Overall) Award 
-and 1$^{st}$ Place for Narrative Short, 2005 Northwest Projections Film 
-Festival; \textit{Lily}, Best Sound, Best Film, 2007 LMU School of Film and Television ``Film Outside the
-Frame Festival.'').}
+\Description{\MarginText{Bachelor of Arts}GPA: 3.34\ \ $\cdotp$\ \ \textit{Music/Recording Arts Double Major}\ \ $\cdotp$\ \ College of Communication and Fine Arts/School of Film and Television\newline }
+%Description: In my undergraduate degree, I pursued interests in both classical
+%music and sound design/mixing for film. Within the music department, I 
+%concetrated on
+%music theory/composition as well as guitar performance, culminating in two
+%senior theses, an original composition, \textit{String Quartet for Space
+%Travel}, and a guitar recital, featuring works by Antonio Lauro, Roland Dyens,
+%Leo Brouwer, Miguel Llobet, Antonio Vivaldi, and others. Within the film
+%department, I scored and sound designed/mixed many student films 
+%(\textit{The Cannibal Ad}, Golden Hamster(Best Overall) Award 
+%and 1$^{st}$ Place for Narrative Short, 2005 Northwest Projections Film 
+%Festival; \textit{Lily}, Best Sound, Best Film, 2007 LMU School of Film and Television ``Film Outside the
+%Frame Festival.'').}
 
 
 
@@ -483,6 +525,8 @@ Frame Festival.'').}
 
 \Description{\MarginText{Languages (Adept)}English, \textsc{c/c++}, \textsc{python}, \textsc{lua}, \textsc{java}, \textsc{perl}, \textsc{html}, \LaTeX}
 \Description{\MarginText{Languages (Familiar)}Latin, \textsc{matlab}, \textsc{X10}, \textsc{javascript}, \textsc{SQL}, \textsc{SPARQL}, \textsc{Linux}/\textsc{Bash}/shell scripting}
+
+\Description{\MarginText{Machine Learning Frameworks}PyTorch, LuaTorch, TensorFlow, Caffe2, Theano, Scientific Python Stack (Numpy, Scipy, SciKit-Learn, iPython/Jupyter Notebook, etc.), VowpalWabbit}
 
 %------------------------------------------------
 
