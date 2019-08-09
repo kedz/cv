@@ -245,12 +245,12 @@
         {% Minion gets some extra sizes    	
 	        \PackageInfo{classicthesis}{A5 paper, MinionPro}%
             \areaset[current]{278pt}{556pt}%
-	        \setlength{\marginparwidth}{5em}%
+	        \setlength{\marginparwidth}{2.5em}%
     	    \setlength{\marginparsep}{1.25em}%
         }{% Palatino or other
         	\PackageInfo{classicthesis}{A5 paper, Palatino or other}%
             \areaset[current]{288pt}{555pt}%
-            \setlength{\marginparwidth}{4em}%
+            \setlength{\marginparwidth}{2.5em}%
             \setlength{\marginparsep}{1.25em}%
         }%
 	}{% A4
@@ -258,14 +258,14 @@
         {% Minion gets some extra sizes        	
         	\PackageInfo{classicthesis}{A4 paper, MinionPro}%
             \areaset[current]{312pt}{684pt}% 609 + 33 + 42 head \the\footskip
-            \setlength{\marginparwidth}{7.5em}%
+            \setlength{\marginparwidth}{2.5em}%
             \setlength{\marginparsep}{2em}%
         }{% Palatino or other
 	        \PackageInfo{classicthesis}{A4 paper, Palatino or other}
-	        \areaset[current]{336pt}{750pt} % ~ 336 * factor 2 + 33 head + 42 \the\footskip 
+	        %\areaset[current]{336pt}{750pt} % ~ 336 * factor 2 + 33 head + 42 \the\footskip 
 %   	     \areaset{336pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip 10pt     
-			\setlength{\marginparwidth}{7em}%
-            \setlength{\marginparsep}{2em}%
+			\setlength{\marginparwidth}{6.7em}%
+            \setlength{\marginparsep}{0.5em}%
         }%
 	}
 % Here are some suggestions for the text widths and heights:
@@ -302,10 +302,10 @@
 %\DeclareRobustCommand{\graffito}[1]{\marginpar%
 % [\graffito@setup\raggedleft\hspace{0pt}{#1}]%
 % {\graffito@setup\raggedright\hspace{0pt}{#1}}}
-\let\oldmarginpar\marginpar
-\renewcommand{\marginpar}[1]{\oldmarginpar%
- [\graffito@setup\raggedleft\hspace{0pt}{#1}]%
- {\graffito@setup\raggedright\hspace{0pt}{#1}}}
+%\let\oldmarginpar\marginpar
+%\renewcommand{\marginpar}[1]{\oldmarginpar%
+% [\graffito@setup\raggedleft\hspace{0pt}{#1}]%
+% {\graffito@setup\raggedright\hspace{0pt}{#1}}}
               
 % Enumeration environment with small caps
 \newenvironment{aenumerate}
