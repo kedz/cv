@@ -44,6 +44,8 @@
 
 \newcommand{\PubEntry}[5]{\noindent\hangindent=0em\hangafter=0 #1. \href{#2}{\color{#5}{#3.}} {\textit{#4.}}\\} 
 
+\newcommand{\PubEntryNL}[5]{\noindent\hangindent=0em\hangafter=0 #1. {\color{#4}{#2.}} {\textit{#3.}}\\} 
+
 %\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
 %----------------------------------------------------------------------------------------
@@ -60,86 +62,67 @@
 
 \noindent\spacedlowsmallcaps{Curriculum Vitae}\vspace{0.5em} 
 
-\NewEntry{phone}{+1 (925) 323 1837}
+\NewEntry{phone}{+1 (925) 323-1837}
 
 \NewEntry{email}{\href{mailto:kedzie@cs.columbia.edu}{kedzie@cs.columbia.edu}}
 
-\NewEntry{web}{\href{http://www.cs.columbia.edu/~kedzie}{www.cs.columbia.edu/$\sim$kedzie}}
+\NewEntry{web}{\href{http://www.cs.columbia.edu/~kedzie/}{www.cs.columbia.edu/$\sim$kedzie/}}
 
-\NewEntry{~~~}{\href{https://www.linkedin.com/in/christopher-kedzie-39b03131}{\includegraphics[scale=.01]{linkedin.jpg} LinkedIn} $\cdot$ \href{https://github.com/kedz}{\includegraphics[scale=0.5]{github.pdf} Github} $\cdot$ \href{https://scholar.google.com/citations?hl=en&user=-xcIYgsAAAAJ}{\includegraphics[scale=0.035]{googlescholar.jpg} Google Scholar}
+\NewEntry{~~~}{\href{https://www.linkedin.com/in/ckedzie}{\includegraphics[scale=.01]{linkedin.jpg} LinkedIn} $\cdot$ \href{https://github.com/kedz}{\includegraphics[scale=0.5]{github.pdf} Github} $\cdot$ \href{https://scholar.google.com/citations?hl=en&user=-xcIYgsAAAAJ}{\includegraphics[scale=0.035]{googlescholar.jpg} Google Scholar}
 } 
 
 ~\\
 
 \MarginSection{~\\Research\\Statement} 
 
-\noindent I am interested in computational models of natural language generation and understanding. I develop methods for improving neural network-based language models via interaction with secondary models of semantics and/or syntactic structure. Currently, I am exploring various cooperative learning schemes where a semantic parser is used to validate the outputs of a learned neural language generation model, not only at test time, but also as a teacher providing noisy supervision during training. 
+\noindent I am interested in computational models of natural language generation (NLG) and understanding (NLU). My current work focuses on designing
+language generation algorithms that faithfully express the communicative goals 
+of a dialog agent. My recent contributions in this area include developing
+NLG models that faithfully follow dialog plans and self-training
+methods that improve the semantic correctness of
+generated utterances. 
+%%Additionally, I am interested in understanding how
+%deep learning models learn to solve complex NLG and NLU problems, especially in 
+%text summarization.
 
+%~\\~\\
+
+%faithfully describe formal
+%meaning representations of a dialog agent's belief states and intentions.
+%Modern deep learning-based NLG methods often produce highly fluent but 
+%misleading or incorrect text in this setting. 
+
+
+%~\\
+%~\\
+%I am especially 
+%interested in controllable models of generation, 
+
+%develop methods for improving neural network-based language models via interaction with secondary models of semantics and/or syntactic structure. Currently, I am exploring various cooperative learning schemes where a semantic parser is used to validate the outputs of a learned neural language generation model, not only at test time, but also as a teacher providing noisy supervision during training. 
+%
 ~
 
 \noindent Some of my research interests include:
 
 \begin{itemize}
     \item \textbf{Text Generation:} Deep neural network models of text generation, paraphrase, and summarization.
-    \item \textbf{Faithful/Controllable Generation:} Conditional generation of natural language from formal meaning representations, semantic structures, or other arbitrary data, with an emphasis on ensuring the correctness of the generated text with respect to model inputs.
-    \item \textbf{Inductive Bias in Text Generation Tasks:} Understanding when humans find text or data interesting, salient, or otherwise remarkable, and building models to do the same in the context of document/data summarization.
+    \item \textbf{Faithful/Controllable Generation in Dialog:} Conditional generation of natural language from formal meaning representations, arbitrary data, or other representations of dialog agent belief states, 
+        with an emphasis on ensuring the correctness of the generated text with respect to model inputs.
+    \item \textbf{Inductive Bias in Text Summarization:} Understanding when humans find text or data interesting, salient, or otherwise remarkable, and building models to do the same in the context of text summarization.
 \end{itemize}
 
 
 \noindent I also apply machine learning to natural language data to extract signals from the web for social scientists.
 
- 
-%In my Ph.D. thesis focused on estimating the 
+~\\
 
-
-%I am a Ph.D. candidate in the Department of Computer Science at Columbia 
-%Universityprimarily 
-%focusing on problems in text summarization and natural language generation.
-
-
- ~\\
-
-%------------------------------------------------------------------------------
-%	EDUCATION
-%------------------------------------------------------------------------------
-
-{\noindent\hangindent=0em\hangafter=0 \MarginSection{Education}\textbf{Columbia University}
-
- \noindent\hangindent=2em\hangafter=0 2014-pres. Ph.D., Computer Science 
-
-\noindent\hangindent=6.8em\hangafter=0 Advisor: Kathleen McKeown
-
-\noindent\hangindent=6.8em\hangafter=0 Thesis: \textit{Salience Estimation and Faithful Generation: Modeling Methods for}
-
-\noindent\hangindent=10.2em\hangafter=0 \textit{Text Summarization and Generation}
-
-
-\noindent\hangindent=2em\hangafter=0 2014-2018 M.Phil., Computer Science 
-
-\noindent\hangindent=2em\hangafter=0 2012-2014 M.S., Computer Science 
-
-}
+\MarginSection{~\\Research\\Experience}
+\noindent\hangindent=2em\hangafter=1 Machine Learning Researcher, \textbf{Rasa Technologies GmbH}, Jan. 4\textsuperscript{th}, 2021 -- \textit{present}.\\
 
 {~\vspace{-1.25em}\\}
 
-{\noindent\hangindent=0em\hangafter=0 \textbf{Loyola Marymount University} }
 
-{\noindent\hangindent=2em\hangafter=0 2004-2008 B.A., Music \& Recording Arts Double Major
-
-}
-
-
-%\spacedlowsmallcaps{Publications}\vspace{1em}
-
-
-%\NewEntry{Nov. 2018}{Chris Kedzie, Kathleen McKeown, and Hal Daum\'e III. 
-%    \textit{Content Selection in Deep Learning Models of Summarization}}
-
-    
-~\\~\\~\\
-
-
-\MarginSection{~\\Research\\Experience}\noindent\hangindent=2em\hangafter=1 Research Intern, \textbf{Facebook Research}, Summer 2017.\\
+\noindent\hangindent=2em\hangafter=1 Research Intern, \textbf{Facebook Research}, Summer 2017.\\
 %\NewEntry{Summer 2017}{Research Intern, \textsc{Facebook} Applied Machine Learning (AML)}
 %\Description{\MarginText{Facebook Research}
 
@@ -170,35 +153,95 @@ to give a talk.
 
 
 
+ 
+%In my Ph.D. thesis focused on estimating the 
+
+
+%I am a Ph.D. candidate in the Department of Computer Science at Columbia 
+%Universityprimarily 
+%focusing on problems in text summarization and natural language generation.
+
+
+ ~\\
+
+%------------------------------------------------------------------------------
+%	EDUCATION
+%------------------------------------------------------------------------------
+
+{\noindent\hangindent=0em\hangafter=0 \MarginSection{Education}\textbf{Columbia University}
+
+ \noindent\hangindent=2em\hangafter=0 2014-2020 Ph.D., Computer Science 
+
+\noindent\hangindent=6.8em\hangafter=0 Advisor: Kathleen McKeown
+
+\noindent\hangindent=6.8em\hangafter=0 Thesis: \textit{Salience Estimation and Faithful Generation: Modeling Methods for}
+
+\noindent\hangindent=10.2em\hangafter=0 \textit{Text Summarization and Generation}
+
+
+\noindent\hangindent=2em\hangafter=0 2014-2018 M.Phil., Computer Science 
+
+\noindent\hangindent=2em\hangafter=0 2012-2014 M.S., Computer Science 
+
+}
+
+{~\vspace{-1.25em}\\}
+
+{\noindent\hangindent=0em\hangafter=0 \textbf{Loyola Marymount University} }
+
+{\noindent\hangindent=2em\hangafter=0 2004-2008 B.A., Music \& Recording Arts Double Major
+
+}
+
+\noindent\hangindent=6.8em\hangafter=0 Within Music major, double concentration in: 
+
+\noindent\hangindent=10.2em\hangafter=0 Classical Guitar Performance 
+
+\noindent\hangindent=10.2em\hangafter=0 Music Theory/Composition
+
+
+
+%\spacedlowsmallcaps{Publications}\vspace{1em}
+
+
+%\NewEntry{Nov. 2018}{Chris Kedzie, Kathleen McKeown, and Hal Daum\'e III. 
+%    \textit{Content Selection in Deep Learning Models of Summarization}}
+
+    
+
+
+
+
+
 \newcommand{\nlgcolor}{Maroon}
 \newcommand{\extsumcolor}{RoyalPurple}
 \newcommand{\socialnlpcolor}{magenta}
 
 ~\\
 
-\MarginSection{~\\Publications}  
+\MarginSection{~\\Conference\\Proceedings}  
 
-\PubEntry{\textbf{Chris Kedzie} and Kathleen McKeown}{
-http://www.cs.columbia.edu/~kedzie/inlga.pdf}{A Good Sample is Hard to Find: Noise Injection Sampling and Self-Training for Neural Language Generation Models}{INLG 2019.\\ \textbf{(Best Paper Award)}}{\nlgcolor}
+
+\PubEntry{\textbf{Chris Kedzie} and Kathleen McKeown}{http://www.cs.columbia.edu/~kedzie/cmrttg.pdf}{Controllable Meaning Representation to Text Generation: Linearization and Data Augmentation Strategies}{EMNLP 2020}{\nlgcolor}
 
     \MarginSection{~\\\color{\nlgcolor}{\footnotesize \vspace{-0.4em}Language\\\vspace{-0.4em}Generation}}
 
-\PubEntry{Katy Gero, \textbf{Chris Kedzie}, Jonathan Reeve, and Lydia Chilton}{
-    http://www.cs.columbia.edu/~kedzie/inlgb.pdf}{Low-Level Linguistic Controls for Style Transfer and Content Preservation}{INLG 2019}{\nlgcolor}
+\PubEntry{\textbf{Chris Kedzie} and Kathleen McKeown}{https://www.aclweb.org/anthology/W19-8672.pdf}{A Good Sample is Hard to Find: Noise Injection Sampling and Self-Training for Neural Language Generation Models}{INLG 2019.\\ \textbf{(Best Paper Award)}}{\nlgcolor}
 
-    \MarginSection{\color{\extsumcolor}{\footnotesize ~\vspace{-0.0em}\\\vspace{-0.4em}Automatic Text\\Summarization}}
+\PubEntry{Katy Gero, \textbf{Chris Kedzie}, Jonathan Reeve, and Lydia Chilton}{https://www.aclweb.org/anthology/W19-8628.pdf}{Low-Level Linguistic Controls for Style Transfer and Content Preservation}{INLG 2019}{\nlgcolor}
 
-\PubEntry{\textbf{Chris Kedzie}, Kathleen McKeown, and Hal Daum\'e III}{https://arxiv.org/pdf/1810.12343}{Content Selection in Deep Learning Models of Summarization}{EMNLP 2018}{\extsumcolor}
+    \MarginSection{\color{\extsumcolor}{\footnotesize ~\vspace{-0.0em}\\\vspace{-0.4em}Automatic\\Summarization}}
 
-\PubEntry{\textbf{Chris Kedzie}, Fernando Diaz, and Kathleen McKeown}{https://arxiv.org/pdf/1605.03664.pdf}{Real-Time Web Scale Event Summarization Using Sequential Decision Making}{IJCAI 2016}{\extsumcolor}
+    \PubEntry{Yanda Chen, \textbf{Chris Kedzie}, Suraj Nair, Petra Galuscakova, Rui Zhang, Douglas Oard, and Kathleen McKeown}{https://aclanthology.org/2021.acl-long.300.pdf}{Cross-language Sentence Selection via Data Augmentation and Rationale Training}{ACL 2021}{\extsumcolor}
+
+\PubEntry{\textbf{Chris Kedzie}, Kathleen McKeown, and Hal Daum\'e III}{https://www.aclweb.org/anthology/D18-1208v2.pdf}{Content Selection in Deep Learning Models of Summarization}{EMNLP 2018}{\extsumcolor}
+
+\PubEntry{\textbf{Chris Kedzie}, Fernando Diaz, and Kathleen McKeown}{https://www.ijcai.org/Proceedings/16/Papers/528.pdf}{Real-Time Web Scale Event Summarization Using Sequential Decision Making}{IJCAI 2016}{\extsumcolor}
 
 \PubEntry{\textbf{Chris Kedzie}, Kathleen McKeown, and Fernando Diaz}{https://www.aclweb.org/anthology/P15-1155.pdf}{Predicting Salient Updates for Disaster Summarization}{ACL 2015}{\extsumcolor}
 
-\PubEntry{Douglas W. Oard, Marine Carpuat, Petra Galuscakova, Joseph Barrow, Suraj Nair, Xing Niu, Han-Chin Shing, Weijia Xu, Elena Zotkina, Kathleen McKeown, Smaranda Muresan, Efsun Selin Kayi,
-Ramy Eskander, \textbf{Chris Kedzie}, Yan Virin, Dragomir R. Radev, Rui Zhang, Mark J. F. Gales, Anton
-Ragni, and Kenneth Heafield.}{https://www.research.ed.ac.uk/portal/files/94992899/Surprise_Languages_Rapid_Response_HEAFIELD_DoA200519_AFV.pdf}{Surprise Languages: Rapid-Response Cross-Language IR}{EVIA 2019}{\extsumcolor}
 
-\PubEntry{\textbf{Chris Kedzie}, Kathleen McKeown, and Fernando Diaz}{http://www.cs.columbia.edu/nlp/papers/2014/columbia_kdd14_social.pdf}{Summarizing disasters over time}{Bloomberg Workshop on Social Good (with SIGKDD) 2014}{\extsumcolor}
+%\clearpage
 
     \MarginSection{\color{\socialnlpcolor}{\footnotesize ~\vspace{-0.0em}\\\vspace{-0.4em}NLP for Social\\Science}}
 
@@ -206,8 +249,35 @@ Ragni, and Kenneth Heafield.}{https://www.research.ed.ac.uk/portal/files/9499289
 
 \PubEntry{Serina Chang, Ruiqi Zhong, Ethan Adams, Fei-Tzin Lee, Siddharth Varia, Desmond U. Patton, William R. Frey, \textbf{Chris Kedzie}, Kathleen McKeown}{https://arxiv.org/pdf/1809.03632}{Detecting gang-involved escalation on social media using context}{EMNLP 2018}{\socialnlpcolor}
 
+\MarginSection{~\\\color{Green}{\footnotesize \vspace{-0.4em}Speech \& \\ Translation}}
+
+\PubEntry{David Wan, \textbf{Chris Kedzie}, Faisal Ladhak, Marine Carpuat, Kathleen McKeown}{https://aclanthology.org/2021.eacl-main.248.pdf}{Segmenting Subtitles for Correcting ASR Segmentation Errors}{EACL 2021}{Green}
+
+\PubEntry{David Wan, \textbf{Chris Kedzie}, Faisal Ladhak, Elsbeth Turcan, Petra Galuscakova, Elena Zotkina, Zhengping Jiang, Peter Bell and Kathleen McKeown}{http://www.statmt.org/wmt20/pdf/2020.wmt-1.141.pdf}{Incorporating Terminology Constraints in Automatic Post-Editing}{WMT 2020}{Green}
+
+\MarginSection{~\\Workshop\\Proceedings}
+
+\PubEntry{David Wan, Zhengping Jiang, \textbf{Chris Kedzie}, Elsbeth Turcan, 
+Peter Bell, Kathleen McKeown}{https://www.aclweb.org/anthology/2020.clssts-1.11/}{Subtitles to Segmentation: Improving Low-Resource Speech-to-Text Translation Pipelines}{LREC 2020 Workshop on Cross-Language Search and Summarization of Text and Speech}{\extsumcolor}
+
+\PubEntry{Douglas W. Oard, Marine Carpuat, Petra Galuscakova, Joseph Barrow, Suraj Nair, Xing Niu, Han-Chin Shing, Weijia Xu, Elena Zotkina, Kathleen McKeown, Smaranda Muresan, Efsun Selin Kayi,
+Ramy Eskander, \textbf{Chris Kedzie}, Yan Virin, Dragomir R. Radev, Rui Zhang, Mark J. F. Gales, Anton
+Ragni, and Kenneth Heafield}{https://www.research.ed.ac.uk/portal/files/94992899/Surprise_Languages_Rapid_Response_HEAFIELD_DoA200519_AFV.pdf}{Surprise Languages: Rapid-Response Cross-Language IR}{EVIA 2019}{\extsumcolor}
+
+
+\PubEntry{\textbf{Chris Kedzie}, Kathleen McKeown, and Fernando Diaz}{http://www.cs.columbia.edu/nlp/papers/2014/columbia_kdd14_social.pdf}{Summarizing disasters over time}{Bloomberg Workshop on Social Good (with SIGKDD) 2014}{\extsumcolor}
+
+
+\MarginSection{~\\Preprints}
+
+\PubEntry{Fei-Tzin Lee, \textbf{Chris Kedzie}, Nakul Verma, and Kathleen McKeown}{https://arxiv.org/pdf/2111.13993.pdf}{An analysis of document graph construction methods for AMR summarization}{2021}{\extsumcolor}
+
+\PubEntry{Katy Gero, \textbf{Chris Kedzie}, Savvas Petridis, and Lydia B. Chilton}{https://arxiv.org/pdf/2110.11850.pdf}{Lightweight Decoding Strategies for Increasing Specificity}{2021}{\nlgcolor}
+
 
 \MarginSection{~\\Talks}   
+
+\noindent \parbox{6em}{2021} Stanford MLSys Seminar. (\href{https://youtu.be/rrzqa1C1aeU}{video}) 
 
 \noindent \parbox{6em}{2019} Natural Language, Dialog and Speech  Symposium. \\\parbox{6em}{~} The New York Academy of Sciences. \textbf{(STAR Talk 2nd Place Prize)}
 
@@ -220,6 +290,25 @@ Ragni, and Kenneth Heafield.}{https://www.research.ed.ac.uk/portal/files/9499289
 \noindent \parbox{6em}{2014} Text Retrieval Conference (TREC), Temporal Summarization Track.
 
 \noindent \parbox{6em}{~} KDD at Bloomberg: Data Frameworks Track.\\
+
+\MarginSection{~\\Posters}
+
+ \noindent \parbox{6em}{2020} Natural Language, Dialog and Speech  Symposium. \\\parbox{6em}{~} The New York Academy of Sciences. 
+
+ \noindent \parbox{6em}{2019} Natural Language, Dialog and Speech  Symposium. \\\parbox{6em}{~} The New York Academy of Sciences. \\
+
+
+\MarginSection{~\\Awards} 
+
+\noindent \parbox{6em}{2021} Columbia U. Comp. Sci. Dept. Michelman Award (community service).
+
+\noindent \parbox{6em}{2020} EMNLP. Outstanding Reviewer. 
+
+\noindent \parbox{6em}{2019} INLG. Best Paper Award. 
+
+\noindent \parbox{6em}{2019} NYAS Natural Language, Dialog and Speech  Symposium. \\
+    \parbox{6em}{\phantom{2019}} STAR Talk 2nd Place Prize. \\   
+  
 
 
 \MarginSection{~\\Demos}
@@ -243,7 +332,13 @@ Ragni, and Kenneth Heafield.}{https://www.research.ed.ac.uk/portal/files/9499289
 
 \MarginSection{~\\Community\\Service}
 
-{\noindent\parbox{6em}{2016--pres.}  Organizer. Columbia NLP Reading Group.} \\
+{\noindent\parbox{6em}{2020--2021}  Co-Organizer/Co-Creator. Pre-submission Application Review (PAR) }\\
+{\noindent\parbox{6em}{~~~~~~~~~~} Program. 
+PAR provides one round of feedback on a PhD applicant's}\\
+ {\noindent\parbox{6em}{~~~~~~~~~~} personal statement by a current computer science PhD student in the}\\ 
+ {\noindent\parbox{6em}{~~~~~~~~~~}
+applicant's area of interest. } \\
+{\noindent\parbox{6em}{2016--2020}  Organizer. Columbia NLP Reading Group.} \\
 {\noindent\parbox{6em}{2014--2017}  Organizer. NLP talks at Columbia.} \\
  
 
@@ -253,8 +348,6 @@ Ragni, and Kenneth Heafield.}{https://www.research.ed.ac.uk/portal/files/9499289
 {\noindent\parbox{6em}{Spring 2014}  Teaching Assistant. Semantic Technologies in IBM Watson.}\\
 {\noindent\parbox{6em}{~~~~~~~~~~~}  Instructor: Alfio Gliozzo.}
 
-
-~\\ ~\\
 
 \date{}
 
