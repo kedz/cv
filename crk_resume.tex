@@ -1,0 +1,352 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{graphicx}
+\input{glyphtounicode}
+\usepackage{newpxtext}
+\usepackage{wrapfig}
+
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} 
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/ckedzie}{\Large Chris Kedzie}} & Brooklyn, New York \\
+ NLP $\cdot$ ML $\cdot$ Generative AI Researcher& \href{mailto:christopher.r.kedzie@gmail.com}{christopher.r.kedzie@gmail.com}\\
+\href{https://www.linkedin.com/in/ckedzie}{\includegraphics[scale=.01]{linkedin.jpg} LinkedIn} $\cdot$ \href{https://github.com/kedz}{\includegraphics[scale=0.5]{github.pdf} Github} $\cdot$ \href{https://scholar.google.com/citations?hl=en&user=-xcIYgsAAAAJ}{\includegraphics[scale=0.035]{googlescholar.jpg} Google Scholar}
+& \href{tel:+19253231837}{+1 (925) 323-1837} \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Microsoft, Inc.} & \textit{June 2022 -- present}\\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{Principal Researcher, MSAI} & \textit{Sept. 2023 -- present}\\
+    \end{tabular*}
+
+\begin{itemize}[leftmargin=4.5mm]
+    \item \textbf{Science lead for enterprise Copilot metrics team.} 
+        Conduct experiments to ensure the quality metrics powered by large language models (LLM) continue to function effectively amidst platform changes.
+        Provide guidance on offline A/B experiments. Communicate metrics issues to leadership and Copilot feature team stakeholders. Consult on human judge/LLM metrics calibration workstreams.
+    \item \textbf{Directly responsible individual (DRI) for enterprise Copilot online quality metrics.} Design first enterprise Copilot quality metrics for online A/B testing. Implement AML pipelines for  LLM-powered extraction of user satisfaction signals from Copilot conversations. Design distillation pipelines to scale LLM evaluation to all worldwide traffic. Work with metrics architect and Bing Copilot metrics teams to bring consistent evaluation suite across all Copilots.
+    \item \textbf{Research intern mentor.} Mentor two Ph.D. interns on topics of LLM model probing for hallucination detection and aligning human judges to LLM-based evaluators with papers to appear at ACL 2024.
+
+\end{itemize}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{Senior Researcher, Semantic Machines} & \textit{June 2022 -- Sept. 2023}\\
+    \end{tabular*}
+
+\begin{itemize}[leftmargin=4.5mm]
+\item \textbf{Science lead for enterprise Copilot metrics team.} Developed novel task completion based evaluation metrics as well as adapted Bing Chat response quality metrics. Designed metrics guidelines for offline A/B testing framework to support contributing feature teams while ensuring new features did not regress product quality. Led the design of LLM powered unit testing for enterprise Copilot. Designed LLM orchestrator tool invocation metrics.
+
+\item \textbf{Project member of fast prototyping team for speculative semantic parsing and conversational AI projects.} Prototyped conversational assistant that could translate natural language utterances to Microsoft's internal graph API language using LLMs with grammar constrained decoding. Implemented M365 content retrieval and evaluation framework for GPT-4 powered  assistant. 
+\item \textbf{Science lead for simulated user project.} Led synthetic data generation project to create additional training data for semantic parsing models. Implemented experiments using in-context prompting for data generation and subsequently trained semantic parsing models in both PyTorch and internal Scala-based ML framework. Worked with data and engineering team to build front-end prototype to support ad-hoc data generation for new parser functionality.
+\end{itemize}
+
+      
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Rasa Technologies, Inc.} & \textit{Jan. 2021 -- June 2022}\\
+    \end{tabular*}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{Senior Machine Learning Researcher} & \textit{Jan. 2022 -- June 2022}\\
+    \end{tabular*}
+
+
+\begin{itemize}[leftmargin=4.5mm]
+      \item \textbf{Contributor to the Rasa framework}, an open-source python-based ML library for implementing conversational AI assistants (18.3k stars on \href{https://github.com/RasaHQ/rasa}{GitHub} and over 50 million downloads). Worked closely with product teams to explore new machine learning features.
+Collaborated on the implementation of the UnexpecTED ML model to detect unusual dialogue turns, aiding in automatic problem identification for debugging conversational assistants.
+
+      \item \textbf{Lead researcher of user simulation framework for system testing.} Led the development of an internal user simulation framework utilizing LLMs to generate user responses based on descriptions of user goals and/or persona.
+Facilitated rapid evaluation of novel dialogue system features across research and engineering teams through the user simulation framework, minimizing the need for extensive human evaluation.
+
+\end{itemize}
+    
+
+
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{Machine Learning Researcher} & \textit{Jan. 2021 -- Dec. 2022}\\
+    \end{tabular*}
+
+\begin{itemize}[leftmargin=4.5mm]
+      \item \textbf{Contributor to the Rasa framework.} Designed and implemented a template-based response generation system on top of an ML powered conversation state manager, that enabled developers to flexibly delegate response generation to an ML dialogue manager or override with custom business logic. Wrote documentation and engaged in developer relations (YouTube videos and answering forum questions) to help introduce the feature with the developer community.  
+
+    \end{itemize}
+
+%~\\
+%I am working on new features for the open source conversational AI/ML library
+%rasa. In particular, I designed the conditional response variations feature which
+%increases the flexibility of rule based response generation for conversational assistants
+%built with Rasa. I also helped implement an ML model, UnexpecTED,
+%to flag unusual turns in a dialogue in order to assist developers in automatically
+%identifying problems with their assistant. Additionally, I lead the development of
+%an internal user simulation framework that uses language models to generate user
+%responses given a natural language description of a user goal. The user simulation
+%framework enabled other research and engineering teams to evaluate novel
+%dialogue system features quickly before needing to do more extensive human
+%evaluation. I also work with product teams on discovery for new ML features.
+
+
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Facebook Research} & \textit{Summer 2017}\\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textit{Research Intern} & \\
+    \end{tabular*}
+
+\begin{itemize}[leftmargin=4.5mm]
+\item \textbf{Applied Machine Learning group intern for clickbait and hate speech detection models.} Developed an adversarial training method to enhance the performance of convolutional neural network text classifiers. Implemented the adversarial training architecture using PyTorch and Caffe2 frameworks.
+Integrated the developed method into the internal FBLearner system to facilitate experiment tracking and execution, and for reuse by other teams.
+\end{itemize}
+
+% I interned with Umut Ozertem in the 
+%Applied Machine Learning (AML) group, focusing on click bait and hate speech 
+%detection.
+%During my project, I developed an adversarial training method to improve 
+%performance of our convolutional neural network text classifiers.
+%I implemented this architecture in PyTorch and Caffe2, and integrated it into
+%the internal FBLearner system for tracking and running experiments.
+%My project is currently in use by several teams in the AML group, and is currently under submission for a patent.
+
+ 
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Microsoft Research} & \textit{Summer 2015}\\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textit{Research Intern} & \\
+    \end{tabular*}
+
+\begin{itemize}[leftmargin=4.5mm]
+\item \textbf{Research intern on scalable summarization systems for streaming news project.} Designed and implemented a text summarization system to deliver concise news updates in real-time using imitation learning. The system achieved top performance in the Temporal Summarization Track of the 2015 Text Retrieval Conference and I was invited to present our model.
+
+% I interned with Fernando Diaz in 
+%    New York City, continuing our collaboration on streaming 
+%    news summarization. I developed scalable summarization systems 
+%    to provide users with brief updates of news events as they were unfolding. 
+%    We participated in the Temporal Summarization Track of the 2015
+%    Text Retrieval Conference, where we were the top performer, and invited
+%to give a talk.
+ 
+    \end{itemize}
+
+
+%--------SKILLS------------
+\section{Skills}
+   Python, PyTorch, Tensorflow, SciKit-Learn, Azure ML, Spark/PySpark, SQL, Streamlit, JavaScript
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Columbia University} & New York, NY\\
+      \textit{Ph.D., Computer Science.} & \textit{\small 2014 -- 2020} \\
+ ~~~~\textit{Dissertation: Salience Estimation and Faithful Generation: Modeling Methods for}\\
+ ~~~~\textit{Text Summarization and Generation. 2021.}\\
+      %\textit{M.Phil., Computer Science.} & \textit{\small 2014 -- 2018} \\
+      \textit{M.S., Computer Science.} & \textit{\small 2012 -- 2014} \\
+    \end{tabular*}
+~\\
+~\\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Loyola Marymount University} & Los Angeles, CA\\
+      \textit{B.A., Music \& Recording Arts Double Major.} & \textit{\small 2004 -- 2008} \\
+    \end{tabular*}\vspace{-5pt}
+
+\section{Awards}
+\noindent \parbox{6em}{2021} Columbia U. Comp. Sci. Dept. Michelman Award (community service).
+
+\noindent \parbox{6em}{2020} EMNLP. Outstanding Reviewer. 
+
+\noindent \parbox{6em}{2019} INLG. Best Paper Award. 
+
+\noindent \parbox{6em}{2019} NYAS Natural Language, Dialog and Speech  Symposium. STAR Talk 2nd Place Prize.\\
+  
+
+
+
+
+\clearpage
+
+\section{Selected Publications (see \href{https://scholar.google.com/citations?hl=en&user=-xcIYgsAAAAJ}{Google Scholar} for complete list)}
+\newcommand{\nlgcolor}{Maroon}
+\newcommand{\evalcolor}{Green}
+\newcommand{\mtcolor}{Blue}
+\newcommand{\extsumcolor}{RoyalPurple}
+\newcommand{\socialnlpcolor}{magenta}
+\newcommand{\PubEntry}[5]{\noindent\hangindent=0em\hangafter=0 #3\\ {\textit{#4.}} #1. \\ ~\\} 
+\newcommand{\PubEntryInline}[5]{\noindent\hangindent=0em\hangafter=0 \href{#2}{\color{#5}{#3}} {\textit{#4.}} #1.} 
+\newcommand{\PubEntryAward}[6]{\noindent\hangindent=0em\hangafter=0 \href{#2}{\color{#5}{#3}} {\textit{#4 -- {#6}.}} #1. \\ ~\\} 
+\newcommand{\MarginSection}[1]{\marginpar{#1}} 
+
+~\\
+\small 
+
+\textbf{Evaluation and Interpretability}\\
+
+\begin{itemize}[leftmargin=6.0mm]
+\item {\color{Maroon}{LLM-Rubric: A Multidimensional, Calibrated~Approach~to~Automated~Evaluation of Natural Language Texts.}} ACL 2024.
+Helia Hashemi, Jason Eisner, Corby Rosset, Benjamin Van Durme, and \textbf{Chris Kedzie}.\\
+
+
+\item \href{https://arxiv.org/pdf/2312.17249v2}{Do Androids Know They're Only Dreaming of Electric Sheep?} ACL Findings 2024.
+Sky CH-Wang, Benjamin Van Durme, Jason Eisner, and \textbf{Chris Kedzie}.\\
+
+
+\item \href{https://www.aclweb.org/anthology/D18-1208v2.pdf}{Content Selection in Deep Learning Models of Summarization.} EMNLP 2018.
+\textbf{Chris Kedzie}, Kathleen McKeown, and Hal Daum\'e III.
+\end{itemize}
+
+\textbf{Text Generation}\\
+
+\begin{itemize}[leftmargin=6.0mm]
+\item \href{https://arxiv.org/pdf/2110.11850.pdf}{Lightweight Decoding Strategies for Increasing Specificity.} Preprint 2021.
+Katy Gero, \textbf{Chris Kedzie}, Savvas Petridis, and Lydia B. Chilton.
+
+\item \href{http://www.cs.columbia.edu/~kedzie/cmrttg.pdf}{Controllable Meaning Representation to Text Generation: Linearization and Data Augmentation Strategies.} EMNLP 2020.
+\textbf{Chris Kedzie} and Kathleen McKeown.
+
+\item \href{https://www.aclweb.org/anthology/W19-8672.pdf}{A Good Sample is Hard to Find: Noise Injection Sampling and Self-Training for Neural Language Generation Models.} INLG 2019.
+\textbf{Chris Kedzie} and Kathleen McKeown.
+
+
+\item \href{https://www.aclweb.org/anthology/W19-8628.pdf}{Low-Level Linguistic Controls for Style Transfer and Content Preservation.} INLG 2019.
+Katy Gero, \textbf{Chris Kedzie}, Jonathan Reeve, and Lydia Chilton.
+
+\end{itemize}
+
+\textbf{Text Summarization} \\
+
+\begin{itemize}[leftmargin=6.0mm]
+\item \href{https://aclanthology.org/2021.acl-long.300.pdf}{Cross-language Sentence Selection via Data Augmentation and Rationale Training.} ACL 2021.
+Yanda Chen, \textbf{Chris Kedzie}, Suraj Nair, Petra Galuscakova, Rui Zhang, Douglas Oard, and Kathleen McKeown.
+
+\item \href{https://www.ijcai.org/Proceedings/16/Papers/528.pdf}{Real-Time Web Scale Event Summarization Using Sequential Decision Making.} IJCAI 2016.
+\textbf{Chris Kedzie}, Fernando Diaz, and Kathleen McKeown.
+
+
+\item \href{https://www.aclweb.org/anthology/P15-1155.pdf}{Predicting Salient Updates for Disaster Summarization.} ACL 2015.
+\textbf{Chris Kedzie}, Kathleen McKeown, and Fernando Diaz.
+
+\end{itemize}
+
+\textbf{NLP for Social Science} \\
+\begin{itemize}[leftmargin=6.0mm]
+\item \href{https://www.aaai.org/ojs/index.php/ICWSM/article/download/3214/3082}{Multimodal social media analysis for gang violence prevention.} ICWSM 2019.
+Philipp Blandfort, Desmond U. Patton, William R. Frey, Svebor Karaman, Surabhi Bhargava, Fei-Tzin Lee, Siddharth Varia, \textbf{Chris Kedzie}, Michael B. Gaskell, Rossano Schifanella, Kathleen McKeown, Shih-Fu Chang. 
+\item \href{https://arxiv.org/pdf/1809.03632}{Detecting gang-involved escalation on social media using context.} EMNLP 2018.
+Serina Chang, Ruiqi Zhong, Ethan Adams, Fei-Tzin Lee, Siddharth Varia, Desmond U. Patton, William R. Frey, \textbf{Chris Kedzie}, Kathleen McKeown. 
+\end{itemize}
+
+
+
+
+\textbf{Speech and Translation}\\
+\begin{itemize}[leftmargin=6.0mm]
+\item \href{https://aclanthology.org/2021.eacl-main.248.pdf}{Segmenting Subtitles for Correcting ASR Segmentation Errors.} EACL 2021.
+David Wan, \textbf{Chris Kedzie}, Faisal Ladhak, Marine Carpuat, Kathleen McKeown.
+\item \href{http://www.statmt.org/wmt20/pdf/2020.wmt-1.141.pdf}{Incorporating Terminology Constraints in Automatic Post-Editing.} WMT 2020.
+David Wan, \textbf{Chris Kedzie}, Faisal Ladhak, Elsbeth Turcan, Petra Galuscakova, Elena Zotkina, Zhengping Jiang, Peter Bell and Kathleen McKeown.
+\end{itemize}
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
